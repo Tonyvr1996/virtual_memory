@@ -359,7 +359,7 @@ programa está desarrollado para no realizar la traducción de valores
 inconsistentes, es decir se pasa por alto estos valores y se traducen
 únicamente valores considerados como válidos.
 
-IV. **SALIDA DE PANTALLA DEL PROGRAMA Y PRUEBAS REALIZADAS**
+IV. **SALIDA DE PANTALLA DEL PROGRAMA Y PRUEBAS REALIZADAS** 🖥
 
 ![](media/image1.png){width="5.905555555555556in" height="1.36875in"}
 
@@ -543,3 +543,31 @@ reposicionarse en un flujo\", *Manpages.ubuntu.com*. \[Online\].
 Available:
 http://manpages.ubuntu.com/manpages/bionic/es/man3/fseek.3.html.
 \[Accessed: 14- Sep- 2020\].
+
+VI. **RECOMENDACIONES**
+
+En caso de que se tenga un backing store de un mayor tamaño, se puede
+implementar un algoritmo de reemplazo de páginas al momento de que en la
+memoria principal ya no existan frames disponibles para cargar una nueva
+página.
+
+La incorporación de alguna estructura que simule un TLB, se consigue una
+mejora en el proceso de traducción ya que así se podría reducir el
+tiempo de acceso a la memoria principal.
+
+VII. **FUENTES:**
+
+\[1\]\"Ubuntu Manpage: fread, fwrite - entrada/salida binaria de flujos
+de datos\", Manpages.ubuntu.com. \[Online\]. Available:
+http://manpages.ubuntu.com/manpages/bionic/es/man3/fread.3.html.
+\[Accessed: 14- Sep- 2020\].
+
+\[2\]\"Ubuntu Manpage: fgetpos, fseek, fsetpos, ftell, rewind -
+reposicionarse en un flujo\", *Manpages.ubuntu.com*. \[Online\].
+Available:
+http://manpages.ubuntu.com/manpages/bionic/es/man3/fseek.3.html.
+\[Accessed: 14- Sep- 2020\].
+
+\[3\] A. Silberschatz, P. Galvin and G. Gagne, Operating system
+concepts, 10th ed. Hoboken (NJ): Wiley, 2018.
+
